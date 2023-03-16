@@ -1,4 +1,6 @@
-%
+% The following line is to set the language for LTeX 
+% LTeX: language=en-US
+
 % Simple asymmetric two-column CV 
 % Author: Sofia JIJON
 %
@@ -6,14 +8,18 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[vmargin=.7cm, hmargin=1cm]{geometry}
 \input{MySetup}
-%-------------------------------------------------------------------------------------------------------
+
 
 \begin{document}
 \thispagestyle{empty}
 
-%-------------------------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------
 % Left column
-%-------------------------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+
 \begin{adjustbox}{valign=t}
 \begin{minipage}{0.44\textwidth} % Adapt width to your convenience
 %----------------------------------------------------
@@ -54,28 +60,36 @@ I like to share my knowledge and point of view with others,
 and I love to think of the best way to do it. Analytical thinking, mathematics 
 and computational skills are my main weapons in problem solving.
 
-
+\vspace*{-.5cm}
 \section*{Education}
 	\begin{description}
 	\raggedright
 	
     \item [\normalfont \textcolor{ColorOne}{Aug. 2021 - Dec. 2022.}] \textbf{M.Sc. in Physics}\\
 	\href{https://www.ib.edu.ar/}{\textcolor{ColorTwo}{Instituto Balseiro - UnCuyo}}\\
-    \textit{Thesis}: Wavefronts in reaction-diffusion equations over heterogeneous media.\\
+    \textit{Thesis}: Massively parallel simulations of fire and epidemic propagation models. \myhref{https://drive.google.com/file/d/1jYa-FzEh-ZRi8lL_dElOZKZTwxVL4Akb/view?usp=sharing}{\faLink}\\
+    Grade: 9.38/10
 	
 
 	\item [\normalfont \textcolor{ColorOne}{Aug. 2019 - Dec. 2021.}] \textbf{Bachelor in Physics}\\
 	\href{https://www.ib.edu.ar/}{\textcolor{ColorTwo}{Instituto Balseiro - UnCuyo}}\\
-    \textit{Thesis}:
-    Massively parallel simulations of fire and epidemic propagation models.\;\myhref{https://drive.google.com/file/d/1JmIweLj1CpdmTIp2c9Dv_1kLrm7pwy0D/view?usp=sharing}{\faLink}\\
+    Grade: 8.58/10\\
+    Historic average (2011-2021): 8.09/10
 
 	\item [\normalfont \textcolor{ColorOne}{Mar. 2017 - Dec. 2018.}] \textbf{Mechatronics Engineering}\\ 
 	\href{https://ingenieria.uncuyo.edu.ar/}{\textcolor{ColorTwo}{Facultad de Ingeniería - UnCuyo}}\\
     Two years before applying to Instituto Balseiro.
-
-    \item [\normalfont \textcolor{ColorOne}{Mar. 2012 - Dec. 2016.}] \textbf{Secondary school in Economics and Administration}\\
-        \href{https://mzapata.uncuyo.edu.ar/}{\textcolor{ColorTwo}{Escuela de Comercio Martín Zapata - UnCuyo}}\\ 
+ 
 \end{description}
+
+\vspace*{-.5cm}
+\section*{Languages}
+\begin{itemize}
+	\raggedright
+	\item Spanish: Native
+	\item English: Intermediate
+\end{itemize}
+
 
 \vfill
 \end{minipage}
@@ -99,7 +113,7 @@ and computational skills are my main weapons in problem solving.
 %-------------------------------------------------------------------------------------------------------
 \begin{adjustbox}{valign=t}
 \begin{minipage}{0.5\textwidth} % Adapt width to your convienience
-\section*{Current situation}
+\section*{Experience}
 \begin{description}
 \raggedright
 \item[\normalfont \textcolor{ColorOne}{Aug. 2021 -- Dec. 2022.}] \textbf{Master's student}\\ \medskip
@@ -109,15 +123,8 @@ and computational skills are my main weapons in problem solving.
 \textcolor{ColorTwo}{-} \href{https://www.argentina.gob.ar/cnea}{\textcolor{ColorTwo}{CNEA}} \textcolor{ColorTwo}{-}
 \href{https://www.uncuyo.edu.ar/}{\textcolor{ColorTwo}{UnCuyo}}\\
 
-Development of Python code for solving reaction-diffusion equations with parallel programming techniques using CUDA.
+Development of Python code for solving reaction-diffusion equations with parallel programming techniques using CUDA. \myhref{https://github.com/RenzoZS/CuSIR}{\faLink}
 
-\end{description}
-\vspace*{-.6cm}
-
-%----------------------------------------------------
-\section*{Experience}
-\begin{description}
-\raggedright
 \item[\normalfont \textcolor{ColorOne}{May. 2021 -- Sep. 2021.}] \textbf{Intern}\\ \medskip
 \href{https://fisica.cab.cnea.gov.ar/pop/}{\textcolor{ColorTwo}{Photonics and Optoelectronics Group}}\\	
 \href{https://fisica.cab.cnea.gov.ar/}{\textcolor{ColorTwo}{Centro Atómico Bariloche}} 
@@ -128,36 +135,32 @@ Laboratory work with the pump-probe spectroscopic technique and massive experime
 
 \end{description}
 
-\vspace*{-.6cm}
+\vspace*{-.7cm}
 \section*{Skills}
 \begin{description}
-    \item Software: Python, Wolfram Mathematica, Tex, GitHub, C++, VSCode, Linux, Office
-    \item Maths: Modeling, Stochastic Processes, Statistics
-    \item Random: Chess, Piano
+    \item \textcolor{ColorOne}{Software:}\\ Python, Wolfram Mathematica, Tex, GitHub, C++, VSCode, Linux, Office, CUDA, SQL, Tableau \vspace*{-.3cm}
+    \item \textcolor{ColorOne}{Maths:}\\ Modeling, Stochastic Processes, Statistics \vspace*{-.3cm}
+    \item \textcolor{ColorOne}{Others:}\\ Chess, Piano
 \end{description}
-\vspace*{-.6cm}
-\section*{Languages}
-\begin{itemize}
-	\raggedright
-	\item Spanish: Native
-	\item English: Intermediate
-\end{itemize}
 
-\vspace*{-.6cm}
+
+
+\vspace*{-.7cm}
 %----------------------------------------------------
 \section*{Presentations}
 \begin{description}
 	\raggedright
-	\item \underline{Renzo Z.}, Alejandro K., \textbf{Propagation of infection/fire fronts on heterogeneous media.} 
-    {\href{https://sites.google.com/view/trefemac2022}{\it TREFEMAC}}, May, 2022, La Plata, Argentina. \myhref{https://drive.google.com/file/d/1eik7cwSDLeRaNuslIp8fZdi0H7srbp_F/view?usp=sharing}{\faLink}
+    \item [-] \textbf{Wave fronts in reaction-diffusion equations on heterogeneous media} \href{https://rafa2022.fisica.org.ar/}{RAFA}, September, 2022, S. C. de Bariloche, Argentina.
+	\item [-] \textbf{Propagation of infection/fire fronts on heterogeneous media.} {\href{https://sites.google.com/view/trefemac2022}{\it TREFEMAC}}, Mayo, 2022, La Plata, Argentina.
 
 \end{description}
-\vspace*{-.6cm}
+\vspace*{-.7cm}
 \section*{Courses}
 \begin{description}
     \raggedright
-    \item \textbf{Data-driven modeling: neural networks, applications and tools.} {\href{https://sites.google.com/view/trefemac2022}{\it TREFEMAC}}, May, 2022, La Plata, Argentina.
-    \item \textbf{Mathematical modeling of neural systems} {\href{https://sites.google.com/view/trefemac2022}{\it TREFEMAC}}, May, 2022, La Plata, Argentina.
+    \item [-] \textbf{School on disordered elastic systems.} \href{https://www.ictp-saifr.org/des2022/}{ICTP},Octubre, 2022, S\~ao Paulo, Brazil.
+    \item [-] \textbf{Data-driven modeling: neural networks, applications and tools.}{\href{https://sites.google.com/view/trefemac2022}{\it TREFEMAC}}, May, 2022, La Plata, Argentina.
+    \item [-] \textbf{Mathematical modeling of neural systems} {\href{https://sites.google.com/view/trefemac2022}{\it TREFEMAC}}, May, 2022, La Plata, Argentina.
 \end{description}
 
 %----------------------------------------------------

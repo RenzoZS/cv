@@ -27,18 +27,18 @@
 %
 % Color theme
 %
-\definecolor{ColorOne}{RGB}{0,110,140} 	% Blue
-\definecolor{ColorTwo}{RGB}{120,0,0} 	% Mauve
-\definecolor{ColorThree}{RGB}{100,0,120} 	% Gold
+\definecolor{ColorOne}{RGB}{0,110,140}
+\definecolor{ColorTwo}{RGB}{120,0,0}
+\definecolor{ColorThree}{RGB}{50,50,50}
 
-\sectionfont{\color{ColorOne}} 
-\subsectionfont{\color{ColorOne}} 
+%\sectionfont{\color{ColorOne}} 
+%\subsectionfont{\color{ColorOne}} 
 
 %
 % Vertical line
 %
-\newcommand{\MyVerticalRule}{%
-	\textcolor{ColorOne}{\rule{1pt}{\textheight}}
+\newcommand{\MyVerticalRule}{
+	\textcolor{ColorThree}{\rule{1pt}{\textheight}}
 }
 
 %
@@ -50,17 +50,11 @@
 \textcolor{ColorOne}{Updated: \monthname,~\the\year.}
 }
 
-%
-% Skip
-%
 \newcommand{\MySkip}{
 \vskip12pt
 }
 
-%
-% Format hyperrefs
-%
-\newcommand{\myhref}[2]{%
+\newcommand{\myhref}[2]{
 \href{#1}{\textcolor{ColorThree}{#2}}
 }
 %
